@@ -5,20 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Game</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .fire {
+    animation: pulse .1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .l2{
+
+        animation: bounce .8s infinite;
+    }
+    
+    .l3{
+
+animation: bounce .27s infinite;
+}
+
+.l4{
+
+animation: bounce .2s infinite;
+}
+
+.l5{
+
+animation: bounce .3s infinite;
+}
+
+.l6{
+
+animation: bounce .4s infinite;
+}
+
+.l1{
+
+animation: bounce .6s infinite;
+}
+
+.l7{
+
+animation: bounce .7s infinite;
+}
+</style>
 </head>
 <body>
-    <h1>The Dice Game Ho Ho Ho</h1>
+    <div class="flex justify-center">
 
-    <h3>Player 1 Wins!!!!</h3>
+    <h1 class="text-[4rem] font-bold text-orange-600"> <div class="inline-block fire animate-pulse">🔥🔥🔥</div> The Dice Game Ho Ho Ho <div class="inline-block fire animate-pulse">🔥🔥🔥</div></h1>
+    </div>
+    <div class="flex justify-center">
 
-    <div>
-        <div><img src="img/6.jpg" alt=""></div>
-        
-        <div><img src="img/6.jpg" alt=""></div>
+        <h3 class="text-[2rem]  text-yellow-400 font-bold"> Who's Gonna Win??? Lets see!!!! <div class="inline-block h-1 w-1 animate-spin">😁</div> </h3>
     </div>
 
-    <div>
-        <button>Lets Roll!!!</button>
+    <div class="flex justify-center mt-4 ">
+        <div class="mr-10"><img class="hover:animate-spin shadow-lg shadow-gray-600" src="img/6.jpg" alt=""></div>
+        
+        <div class="ml-10"><img class="hover:animate-spin shadow-lg shadow-gray-600" src="img/6.jpg" alt=""></div>
+    </div>
+
+    <div class="">
+        <div class="loon l1">🎈</div><div class="loon l2">🎈</div><div class="loon l3">🎆</div><div class=" loon l4">🎆</div><div class="loon l5">🎇</div><div class="loon l6">🎇</div><div class="loon l7">✨</div>
+    </div>
+
+    <div class="flex mt-8 mb-3">
+        <button class="animate-pulse shadow-sm shadow-slate-600 bg-red-700 transition-all hover:-translate-y-2  hover:shadow-lg hover:shadow-slate-700 hover:bg-red-400 hover:text-red-800 rounded-md px-3 py-2 mx-auto text-white font-bold">Lets Roll!!!</button>
     </div>
 
     <script src="ind.js"></script>
