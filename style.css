@@ -559,10 +559,6 @@ video {
   margin-top: 2rem;
 }
 
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -577,22 +573,6 @@ video {
 
 .w-1 {
   width: 0.25rem;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  animation: bounce 1s infinite;
 }
 
 @keyframes pulse {
@@ -638,12 +618,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.text-\[2rem\] {
-  font-size: 2rem;
+.text-\[1rem\] {
+  font-size: 1rem;
 }
 
-.text-\[4rem\] {
-  font-size: 4rem;
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .font-bold {
@@ -752,4 +732,52 @@ video {
 .hover\:shadow-slate-700:hover {
   --tw-shadow-color: #334155;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+@media (min-width: 640px) {
+  .sm\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .sm\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .sm\:text-\[\] {
+    color: ;
+  }
+
+  .sm\:text-\[2\] {
+    color: 2;
+  }
+
+  .sm\:text-\[2re\] {
+    color: 2re;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .md\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .md\:text-\[rem\] {
+    color: rem;
+  }
 }
